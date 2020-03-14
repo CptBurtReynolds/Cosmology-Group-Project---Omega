@@ -109,12 +109,25 @@ plt.plot(O_2sig_plus, t0, 'k:', alpha = 0.15)
 
 
 
-plt.plot(O,y, 'r-', label = 'w_x → -∞')
+plt.plot(O,y, 'r-', color = 'red', label = 'w_x → -∞')
 
 plt.plot(O,t0[0], label = 'Mean of w_x = -1.35')
-plt.plot(O,t0[16], label = '1-σ of w_x = -0.55')
-plt.plot(O,t0[22], label = '2-σ of w_x = -0.25')
+plt.plot(O,t0[16], color = 'orange', label = '1-σ of w_x = -0.55')
+plt.plot(O,t0[22], color = 'green', label = '2-σ of w_x = -0.25')
 
+
+
+plt.scatter(0.35, 12.8, marker = 'o', color = 'magenta')       # These Plot Marks & Label At Specific Points On the Plot That Will Be Used For the Analysis
+plt.text(0.323, 12.35, "M")
+
+plt.scatter(0.3, 11.7, marker = 'o', color = 'magenta')
+plt.text(0.275, 11.3, "A")
+
+plt.scatter(0.4, 13.9, marker = 'o', color = 'magenta')
+plt.text(0.375, 13.45, "A")
+
+plt.scatter(0.25, 10.6, marker = 'o', color = 'magenta')
+plt.text(0.225, 10.2, "B")
 
 plt.legend()
 plt.ylabel('t_0')
